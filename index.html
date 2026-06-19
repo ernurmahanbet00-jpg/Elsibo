@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТОО ЭЛСИБО — Транспортная и складская логистика</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .group:hover .group-hover-scale { transform: scale(1.1); }
+    .transition-transform { transition: transform 0.3s ease; }
+    .overflow-hidden:hover img { transform: scale(1.1); }
+  </style>
+</head>
+<body class="min-h-screen bg-white">
+
+<!-- HEADER -->
+<header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <img src="images/logo.png" alt="ЭЛСИБО" class="h-14 w-auto object-contain" />
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Главная</a>
+        <a href="#about" class="text-gray-700 hover:text-blue-600 transition">О компании</a>
+        <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Услуги</a>
+        <a href="#fleet" class="text-gray-700 hover:text-blue-600 transition">Наш парк</a>
+        <a href="#projects" class="text-gray-700 hover:text-blue-600 transition">Проекты</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 transition">Контакты</a>
+      </div>
+      <button id="menuBtn" class="md:hidden">
+        <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg id="iconClose" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden py-4 space-y-2">
+      <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600">Главная</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">О компании</a>
+      <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600">Услуги</a>
+      <a href="#fleet" class="block py-2 text-gray-700 hover:text-blue-600">Наш парк</a>
+      <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600">Проекты</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Контакты</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-100">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-5xl md:text-6xl mb-6 text-gray-900">
+      <span class="text-blue-600">ТОО ЭЛСИБО</span>
+    </h2>
+    <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+      Динамично развивающаяся казахстанская компания в области транспортной и складской логистики
+    </p>
+    <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+      <div class="bg-white/80 backdrop-blur p-6 rounded-xl shadow-lg">
+        <div class="text-4xl text-blue-600 mb-2">75+</div>
+        <div class="text-gray-700">Единиц техники</div>
+      </div>
+      <div class="bg-white/80 backdrop-blur p-6 rounded-xl shadow-lg">
+        <div class="text-4xl text-blue-600 mb-2">🇰🇿</div>
+        <div class="text-gray-700">Уральск, Казахстан</div>
+      </div>
+      <div class="bg-white/80 backdrop-blur p-6 rounded-xl shadow-lg">
+        <div class="text-4xl text-blue-600 mb-2">24/7</div>
+        <div class="text-gray-700">Всегда на связи</div>
+      </div>
+    </div>
+    <a href="#contact">
+      <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition inline-flex items-center gap-2">
+        Связаться с нами ›
+      </button>
+    </a>
+  </div>
+</section>
+
+<!-- О КОМПАНИИ -->
+<section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl text-center mb-12 text-gray-900">О компании</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-start mb-16">
+      <div>
+        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+          ТОО ЭЛСИБО – динамично развивающаяся казахстанская компания, оказывающая услуги в области транспортной и складской логистике, в сфере деятельности которой также организация перевозок любых типов грузов, аренда спецтехники с использованием собственного автопарка.
+        </p>
+        <div class="bg-blue-50 p-6 rounded-xl mb-6">
+          <h3 class="text-2xl mb-4 text-gray-900">🎯 Наша миссия</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Открывать новые горизонты для процветания и уверенного роста наших клиентов, партнеров и сотрудников, являясь ключевым связующим звеном между компаниями в сфере транспортно-логистических услуг.
+          </p>
+        </div>
+      </div>
+      <div class="space-y-6">
+        <h3 class="text-2xl mb-6 text-gray-900">Наши ценности</h3>
+        <div class="flex gap-4">
+          <div class="bg-blue-100 p-3 rounded-lg h-fit">🛡️</div>
+          <div>
+            <h4 class="text-xl mb-2 text-gray-900">Качество и надежность</h4>
+            <p class="text-gray-600">Высокое качество и надежность услуг основаны на профессионализме, строгой технологической дисциплине и современных стандартах управления.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-blue-100 p-3 rounded-lg h-fit">👥</div>
+          <div>
+            <h4 class="text-xl mb-2 text-gray-900">Клиентоориентированность</h4>
+            <p class="text-gray-600">Выстраиваем долгосрочные, доверительные и взаимовыгодные отношения с клиентами и партнерами, руководствуясь принципами ответственности и порядочности.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-blue-100 p-3 rounded-lg h-fit">⚡</div>
+          <div>
+            <h4 class="text-xl mb-2 text-gray-900">Эффективность</h4>
+            <p class="text-gray-600">Предлагаем максимально эффективные логистические решения, оптимизируя производственные и бизнес-процессы, сокращая издержки.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-blue-100 p-3 rounded-lg h-fit">🏠</div>
+          <div>
+            <h4 class="text-xl mb-2 text-gray-900">Социальная ответственность</h4>
+            <p class="text-gray-600">Ответственно подходим к своим социальным и экологическим обязательствам и придерж��ваемся лучших практик в области устойчивого развития.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl text-center mb-4 text-gray-900">Наши услуги</h2>
+    <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+      ТОО ЭЛСИБО предлагает своим клиентам широкий спектр высококачественных услуг, связанных с перемещением и хранением грузов
+    </p>
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="bg-blue-100 p-4 rounded-lg text-3xl">🚛</div>
+          <h3 class="text-2xl text-gray-900">Организация перевозок грузов</h3>
+        </div>
+        <p class="text-gray-600 mb-4">ТОО ЭЛСИБО имеет собственный парк грузовых машин и организует автоперевозку грузов по Казахстану и ближнему зарубежью:</p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Перевозки сборного груза с полной загрузкой</span></li>
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Перевозки опасного груза</span></li>
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Перевозки негабаритных, длинномерных и тяжеловесных грузов</span></li>
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Перевозки контейнеров</span></li>
+        </ul>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="bg-blue-100 p-4 rounded-lg text-3xl">🔧</div>
+          <h3 class="text-2xl text-gray-900">Аренда спецтехники</h3>
+        </div>
+        <p class="text-gray-600 mb-4">Собственный парк автомашин и специализированной техники превышает 75 единиц и по запросам клиентов может быть предоставлен в аренду:</p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Тягачи</span></li>
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Полуприцепы</span></li>
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Дорожно-строительная техника</span></li>
+          <li class="flex items-start gap-3"><span class="text-blue-600">›</span><span class="text-gray-700">Погрузочно-разгрузочная техника</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-blue-600 text-white p-8 rounded-xl shadow-lg">
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-3xl">🏭</span>
+        <h3 class="text-2xl">Складская логистика</h3>
+      </div>
+      <p class="text-blue-50">Профессиональные решения для хранения и управления складскими запасами</p>
+    </div>
+  </div>
+</section>
+
+<!-- ПАРК ТЕХНИКИ -->
+<section id="fleet" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl text-center mb-4 text-gray-900">Наш парк техники</h2>
+    <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+      Собственный парк автомашин и специализированной техники компании насчитывает более 75 единиц. Технику обслуживает опытный персонал, осуществляющий работы с учетом всех требований по ОТ и ТБ.
+    </p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🚛</div><h3 class="text-xl mb-2 text-gray-900">Тягачи</h3>
+        <div class="text-3xl text-blue-600">25+</div><div class="text-gray-600">единиц</div>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🚚</div><h3 class="text-xl mb-2 text-gray-900">Полуприцепы</h3>
+        <div class="text-3xl text-blue-600">50+</div><div class="text-gray-600">единиц</div>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🏗️</div><h3 class="text-xl mb-2 text-gray-900">Автокраны</h3>
+        <div class="text-3xl text-blue-600">3+</div><div class="text-gray-600">единиц</div>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🦾</div><h3 class="text-xl mb-2 text-gray-900">Манипуляторы</h3>
+        <div class="text-3xl text-blue-600">3+</div><div class="text-gray-600">единиц</div>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="text-5xl mb-4">🚗</div><h3 class="text-xl mb-2 text-gray-900">Легковые автомобили</h3>
+        <div class="text-3xl text-blue-600">10+</div><div class="text-gray-600">единиц</div>
+      </div>
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="text-5xl mb-4">⚙️</div><h3 class="text-xl mb-2 text-gray-900">Спецтехника</h3>
+        <div class="text-3xl text-blue-600">75+</div><div class="text-gray-600">единиц</div>
+      </div>
+    </div>
+
+    <!-- Галерея -->
+    <h3 class="text-3xl text-center mb-8 text-gray-900">Наша техника в работе</h3>
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="relative overflow-hidden rounded-xl shadow-lg" style="height:256px">
+        <img src="images/truck-1.jpg" alt="Грузовой транспорт" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end"><p style="color:white;padding:16px">Междугородние перевозки</p></div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg" style="height:256px">
+        <img src="images/truck-2.jpg" alt="Фура на фоне гор" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end"><p style="color:white;padding:16px">Перевозки по Казахстану</p></div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg" style="height:256px">
+        <img src="images/truck-3.jpg" alt="Тягач с прицепом" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end"><p style="color:white;padding:16px">Специализированная техника</p></div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg" style="height:256px">
+        <img src="images/truck-4.jpg" alt="Белый грузовик" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end"><p style="color:white;padding:16px">Современный автопарк</p></div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg" style="height:256px">
+        <img src="images/truck-5.jpg" alt="Грузовик на трассе" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end"><p style="color:white;padding:16px">Надежная доставка</p></div>
+      </div>
+      <div class="relative overflow-hidden rounded-xl shadow-lg" style="height:256px">
+        <img src="images/truck-6.jpg" alt="Грузовая фура" style="width:100%;height:100%;object-fit:cover;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);display:flex;align-items:flex-end"><p style="color:white;padding:16px">Международные маршруты</p></div>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 p-6 rounded-xl">
+      <p class="text-gray-700 text-center">
+        <strong>Собственная ремонтная база:</strong> Профилактические и ремонтные работы выполняются на собственной ремонтной базе
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ПРОЕКТЫ -->
+<section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl text-center mb-12 text-gray-900">Наши проекты</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="bg-blue-100 px-4 py-2 rounded-lg inline-block mb-4">
+          <span class="text-blue-600">Проект #1</span>
+        </div>
+        <h3 class="text-2xl mb-4 text-gray-900">Карабатан</h3>
+        <p class="text-gray-600 mb-6">Предоставление техники в аренду в период капитального ремонта</p>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-blue-600">📍</span>
+            <span class="text-gray-700"><strong>Место:</strong> Карабатан</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">🚛</span>
+            <div class="text-gray-700">
+              <strong>Техника:</strong>
+              <div>• 6 тягачей</div>
+              <div>• 20 прицепов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <div class="bg-blue-100 px-4 py-2 rounded-lg inline-block mb-4">
+          <span class="text-blue-600">Проект #2</span>
+        </div>
+        <h3 class="text-2xl mb-4 text-gray-900">Аксай</h3>
+        <p class="text-gray-600 mb-6">Предоставление техники в аренду в период капитального ремонта</p>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-blue-600">📍</span>
+            <span class="text-gray-700"><strong>Место:</strong> Аксай</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-blue-600 mt-1">🚛</span>
+            <div class="text-gray-700">
+              <strong>Техника:</strong>
+              <div>• 25 тягачей</div>
+              <div>• 50 прицепов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl text-center mb-4 text-gray-900">Контактные данные</h2>
+    <p class="text-center text-xl text-blue-600 mb-12">Всегда открыты для сотрудничества!</p>
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <div class="bg-blue-100 p-3 rounded-lg">📍</div>
+          <div>
+            <h3 class="text-xl mb-1 text-gray-900">Адрес</h3>
+            <p class="text-gray-700">Республика Казахстан, ЗКО</p>
+            <p class="text-gray-700">г. Уральск</p>
+            <p class="text-gray-700">Ул. Соколиная, дом №15</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="bg-blue-100 p-3 rounded-lg">📞</div>
+          <div>
+            <h3 class="text-xl mb-1 text-gray-900">Телефон</h3>
+            <a href="tel:+77770600069" class="text-blue-600 hover:text-blue-700 text-lg">+7 777 060 0069</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <div class="bg-blue-100 p-3 rounded-lg">✉️</div>
+          <div>
+            <h3 class="text-xl mb-1 text-gray-900">Email</h3>
+            <a href="mailto:elsibo_e@mail.ru" class="text-blue-600 hover:text-blue-700">elsibo_e@mail.ru</a>
+          </div>
+        </div>
+      </div>
+      <form id="contactForm" class="space-y-4">
+        <h3 class="text-2xl mb-6 text-gray-900">Оставьте заявку</h3>
+        <input type="text" id="fname" placeholder="Ваше имя" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="tel" id="fphone" placeholder="Телефон" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="email" id="femail" placeholder="Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <textarea id="fmessage" placeholder="Ваше сообщение" required rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer class="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8 mb-6">
+      <div>
+        <img src="images/logo.png" alt="ЭЛСИБО" class="h-14 w-auto object-contain mb-3" />
+        <p class="text-gray-400">Транспортная и складская логистика в Казахстане</p>
+      </div>
+      <div>
+        <h3 class="text-xl mb-3">Контакты</h3>
+        <p class="text-gray-400">+7 777 060 0069</p>
+        <p class="text-gray-400">elsibo_e@mail.ru</p>
+      </div>
+      <div>
+        <h3 class="text-xl mb-3">Адрес</h3>
+        <p class="text-gray-400">г. Уральск, ЗКО</p>
+        <p class="text-gray-400">Ул. Соколиная, дом №15</p>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6 text-center">
+      <p class="text-gray-400">© 2026 ТОО ЭЛСИБО. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Мобильное меню
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const iconMenu = document.getElementById('iconMenu');
+  const iconClose = document.getElementById('iconClose');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    iconMenu.classList.toggle('hidden', !isOpen);
+    iconClose.classList.toggle('hidden', isOpen);
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      iconMenu.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  // Форма обратной связи
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('fname').value;
+    const phone = document.getElementById('fphone').value;
+    const email = document.getElementById('femail').value;
+    const message = document.getElementById('fmessage').value;
+    const subject = `Новая заявка от ${name}`;
+    const body = `Имя: ${name}\nТелефон: ${phone}\nEmail: ${email}\n\nСообщение:\n${message}`;
+    window.location.href = `mailto:elsibo_e@mail.ru?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
